@@ -115,7 +115,20 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\TTN_QLBH_BUS\TTN_QLBH_BUS.csproj">
+      <Project>{fddf6998-2396-46d9-a7b2-e3318cf5aa85}</Project>
+      <Name>TTN_QLBH_BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TTN_QLBH_DAL\TTN_QLBH_DAL.csproj">
+      <Project>{9df3a616-3afd-4a1f-aa58-6a97499f2bd7}</Project>
+      <Name>TTN_QLBH_DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TTN_QLBH_Entity\TTN_QLBH_Entity.csproj">
+      <Project>{89693385-5292-46f3-9c6a-6a4fc1ab65f5}</Project>
+      <Name>TTN_QLBH_Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

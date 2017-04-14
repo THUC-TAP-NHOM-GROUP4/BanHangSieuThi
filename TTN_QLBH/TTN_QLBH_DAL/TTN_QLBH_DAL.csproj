@@ -53,6 +53,12 @@
     <Compile Include="SQL_tblKhachHang.cs" />
     <Compile Include="SQL_tblNhanVien.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TTN_QLBH_Entity\TTN_QLBH_Entity.csproj">
+      <Project>{89693385-5292-46f3-9c6a-6a4fc1ab65f5}</Project>
+      <Name>TTN_QLBH_Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
