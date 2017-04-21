@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TTN_QLBH_BUS
+namespace TTN_QLNS_Bus
 {
-    class BUS_KhachHang
+    class Bus_tblNhanVien
     {
     }
 }

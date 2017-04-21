@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("TTN_QLBH_DAL")]
+[assembly: AssemblyTitle("TTN_QLBH_SQL")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Microsoft")]
-[assembly: AssemblyProduct("TTN_QLBH_DAL")]
+[assembly: AssemblyProduct("TTN_QLBH_SQL")]
 [assembly: AssemblyCopyright("Copyright © Microsoft 2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("9df3a616-3afd-4a1f-aa58-6a97499f2bd7")]
+[assembly: Guid("ac278848-f2a5-4b39-a4ad-f6ab644ff6d2")]
 
 // Version information for an assembly consists of the following four values:
 //

@@ -64,6 +64,12 @@
     <Compile Include="frmBanHang.Designer.cs">
       <DependentUpon>frmBanHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmQLKhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +99,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -116,17 +125,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TTN_QLBH_BUS\TTN_QLBH_BUS.csproj">
-      <Project>{fddf6998-2396-46d9-a7b2-e3318cf5aa85}</Project>
-      <Name>TTN_QLBH_BUS</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\TTN_QLBH_DAL\TTN_QLBH_DAL.csproj">
-      <Project>{9df3a616-3afd-4a1f-aa58-6a97499f2bd7}</Project>
-      <Name>TTN_QLBH_DAL</Name>
-    </ProjectReference>
     <ProjectReference Include="..\TTN_QLBH_Entity\TTN_QLBH_Entity.csproj">
-      <Project>{89693385-5292-46f3-9c6a-6a4fc1ab65f5}</Project>
+      <Project>{973a9924-bf21-4851-9975-e2dca78f5dd1}</Project>
       <Name>TTN_QLBH_Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TTN_QLBH_SQL\TTN_QLBH_SQL.csproj">
+      <Project>{ac278848-f2a5-4b39-a4ad-f6ab644ff6d2}</Project>
+      <Name>TTN_QLBH_SQL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TTN_QLNS_Bus\TTN_QLBH_Bus.csproj">
+      <Project>{e5061fd7-486e-4fc9-9a5a-1a250ca34e66}</Project>
+      <Name>TTN_QLBH_Bus</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

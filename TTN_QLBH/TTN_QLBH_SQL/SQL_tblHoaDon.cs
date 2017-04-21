@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TTN_QLBH_DAL
+namespace TTN_QLBH_SQL
 {
-    class SQL_tblNhanVien
+   public class SQL_tblHoaDon
     {
+       
     }
 }

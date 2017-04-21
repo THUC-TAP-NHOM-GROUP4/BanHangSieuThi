@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TTN_QLBH_Entity
 {
-   public class EC_tblKhachHang
+  public class EC_tblKhachHang
     {
         private string _ma;
         public string Ma

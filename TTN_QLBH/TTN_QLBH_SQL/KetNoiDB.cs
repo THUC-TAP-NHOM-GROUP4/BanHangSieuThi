@@ -5,14 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
-using System.Configuration;
 
-namespace TTN_QLBH_DAL
+namespace TTN_QLBH_SQL
 {
-    public class KetNoiDB
+   public class KetNoiDB
     {
         public static SqlConnection connect;
-        //mở kết nối
+
+        // Mở kết nối 
         public static void MoKetNoi()
         {
             if (KetNoiDB.connect == null)
@@ -21,8 +21,8 @@ namespace TTN_QLBH_DAL
                 KetNoiDB.connect.Open();
         }
 
-        //đóng kết nối
-        public void DongKetNoi()
+        // Đóng kết nối
+        public void DongKetNoi()//bỏ static
         {
             if (KetNoiDB.connect != null)
             {
@@ -33,22 +33,25 @@ namespace TTN_QLBH_DAL
             }
         }
 
-        //hàm để thưc thi các câu lệnh sql : insert , update , delete
+        // Hàm để thực thi các câu lệnh sql : insert, update, delete 
         public void ThucThiCauLenhSQL(string strSQL)
         {
             try
             {
                 MoKetNoi();
                 SqlCommand sqlcmd = new SqlCommand(strSQL, connect);
-                sqlcmd.ExecuteNonQuery();//ko trả về giá trị
+                sqlcmd.ExecuteNonQuery(); // không trả về gì hết
                 DongKetNoi();
             }
             catch
-            { }
+            {
+
+            }
+            //   DongKetNoi();//bỏ--nga
         }
 
-        //hàm khi gọi tới câu lệnh select sẽ trả về 1 data table
-        public DataTable GetDataTable(string strSQL)
+        // Hàm khi gọi tới câu lệnh select sẽ trả về 1 data table
+        public DataTable GetDataTable(string strSQL)  // truyền vào câu lệnh select
         {
             try
             {
@@ -59,24 +62,27 @@ namespace TTN_QLBH_DAL
                 DongKetNoi();
                 return dt;
             }
+
             catch
             {
                 return null;
             }
         }
 
-        public string GetValue(string strSQL)
+        // 
+        public string GetValue(string strSQL) //select
         {
             string temp = null;
             MoKetNoi();
             SqlCommand sqlcmd = new SqlCommand(strSQL, connect);
+            // sqlcmd cho ta 1 table, hàm có tác dụng khi ta select 1 cái đơn trị
+            // 0,1,2,3.. là chỉ số của các trường.
             SqlDataReader sqldr = sqlcmd.ExecuteReader();
             while (sqldr.Read())
-                temp = sqldr[0].ToString();
+                temp = sqldr[0].ToString(); // 0 là chỉ số, trường thứ 0
             DongKetNoi();
             return temp;
         }
-
 
         public DataTable StorePro(string sql)
         {
@@ -97,11 +103,13 @@ namespace TTN_QLBH_DAL
             {
                 return null;
             }
+
         }
         public static string connectionString
         {
             get;
             set;
         }
+
     }
 }

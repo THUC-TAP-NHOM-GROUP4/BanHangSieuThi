@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TTN_QLBH_Entity
 {
-   public  class EC_tblHoaDon
+   public class EC_tblHoaDon
     {
         private string _ma;
         public string Ma
@@ -40,4 +40,3 @@ namespace TTN_QLBH_Entity
         }
     }
 }
-

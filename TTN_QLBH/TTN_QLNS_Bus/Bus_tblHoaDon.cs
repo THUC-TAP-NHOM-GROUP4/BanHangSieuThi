@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TTN_QLBH_DAL
+namespace TTN_QLNS_Bus
 {
-    class SQL_tblHangHoa
+    class Bus_tblHoaDon
     {
     }
 }

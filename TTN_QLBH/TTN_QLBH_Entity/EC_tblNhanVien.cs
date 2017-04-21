@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TTN_QLBH_Entity
 {
-   public  class EC_tblNhanVien
+  public class EC_tblNhanVien
     {
         private string _ma;
         private string _ten;
@@ -134,5 +134,4 @@ namespace TTN_QLBH_Entity
                 _matkhau = value;
             }
         }
-    }
 }

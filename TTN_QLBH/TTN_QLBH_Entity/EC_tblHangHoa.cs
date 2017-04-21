@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TTN_QLBH_Entity
 {
- public class EC_tblHangHoa
+   public class EC_tblHangHoa
     {
         private string _ma;
         public string Ma
@@ -47,11 +47,9 @@ namespace TTN_QLBH_Entity
         private string _noisx;
         public string Noisx
 
-        {   get { return _noisx; }
+        {
+            get { return _noisx; }
             set { _noisx = value; }
         }
     }
-
 }
-
-
